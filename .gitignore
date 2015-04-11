@@ -1,0 +1,11 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/app/src/main/qt_output
+*.pro.user
+*.pro.user*
+*.pro.user.*
+/cpp_lib/cpp_lib/cpp_lib.pro.user
