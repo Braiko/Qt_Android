@@ -21,8 +21,8 @@ android {
     sourceSets {
         main {
             java.srcDirs += ['/src/main/java']
-            res.srcDirs += ['src/main/res','src/main/qtgen/android-build/res']
-            jniLibs.srcDirs += 'src/main/qtgen/android-build/libs'
+            res.srcDirs += ['src/main/res','src/main/qt_output/android-build/res']
+            jniLibs.srcDirs += 'src/main/qt_output/android-build/libs'
         }
     }
 }
@@ -30,6 +30,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
-    compile files('src/main/qtgen/android-build/libs/QtAndroid-bundled.jar')
-    compile files('src/main/qtgen/android-build/libs/QtAndroidAccessibility-bundled.jar')
+    compile files('src/main/qt_output/android-build/libs/QtAndroid-bundled.jar')
+    compile files('src/main/qt_output/android-build/libs/QtAndroidAccessibility-bundled.jar')
 }

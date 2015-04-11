@@ -3,13 +3,14 @@
 
 #include "cpp_lib_global.h"
 #include <jni.h>
+#include <QString>
 
 class CPP_LIBSHARED_EXPORT Cpp_lib
 {
 
 public:
     Cpp_lib();
-
+    QString say(QString subject);
 };
 
 #ifdef __cplusplus
